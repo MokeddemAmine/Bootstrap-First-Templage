@@ -1,0 +1,177 @@
+/* Start global variables */
+:root{
+    --main-color:#08526d;
+    --second-color:#ec1c23;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.text-main-color{
+    color:var(--main-color) !important;
+}
+.text-second-color{
+    color:var(--second-color) !important
+}
+.bg-main-color{
+    background-color: var(--main-color) !important;
+}
+.bg-second-color{
+    background-color: var(--second-color) !important;
+}
+.btn-outline-mine{
+    background-color: transparent !important;
+    color:var(--main-color) !important;
+    border-color: var(--main-color) !important;
+    transition:.3s;
+}
+.btn-outline-mine:hover{
+    background-color: var(--second-color) !important;
+    border-color: var(--second-color) !important;
+    color:#fff !important;
+}
+.myactive{
+    background-color: #ec1c23 !important;
+    color:white !important;
+    border-color: #ec1c23 !important;
+}
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,.6);
+    z-index: 2;
+}
+/* End global varibalbes */
+/* Start Upper Bar */
+.upper-bar{
+    background-color: var(--main-color);
+}
+.btn-upper-bar{
+    background-color: var(--main-color);
+    border:.01rem solid var(--second-color);
+}
+/* End Upper Bar */
+/* Start Navbar */
+#myNavbar a:hover{
+    color:var(--second-color) !important
+}
+.navbar-brand{
+    font-size:1.8rem
+}
+/* End Navbar */
+/* Start landing */
+.landing .carousel-item{
+    background-size: cover;
+}
+.landing .carousel-content{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    color:white;
+    z-index:3;
+    font-size:4rem;
+    line-height:1.5;
+}
+@media (max-width:991px){
+    .landing .carousel-content{
+        font-size:3rem;
+        width:100%;
+        text-align:center
+    }
+}
+@media (max-width:575px){
+    .landing .carousel-content{
+        font-size:2rem;
+    }
+}
+.landing .landing-one{
+    background-image: url(../img/landing1.jpg);
+}
+.landing .landing-two{
+    background-image: url(../img/landing2.jpeg);
+}
+.landing .landing-three{
+    background-image: url(../img/landing3.jpg);
+}
+.carousel-indicators li{
+    width:15px;
+    height:15px;
+}
+/* End landing */
+/* Start featured work */
+@media (max-width:767px){
+    .featured-work .nav .nav-item{
+        width:100%;
+        margin-bottom:.5rem
+    }
+}
+/* End featured work */
+/* Start testimonials */
+.testimonials{
+    height:800px;
+    background-image: url(../img/testimonial.jpg);
+    position:relative;
+}
+.testimonials .carousel-caption{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:50%;
+}
+.testimonials a{
+    z-index: 3;
+}
+.testimonials a span{
+    background-color: #ec1c23;
+    padding:1rem;
+}
+@media (max-width:991px){
+    .testimonials .carousel-caption{
+        width:80%;
+        right:0;
+        left:0;
+    }
+}
+/* End testimonials */
+/* Start pricing */
+.pricing .card,
+.pricing .card .card-subtitle,
+.pricing .card .card-link{
+    transition:.5s;
+}
+.pricing .card{
+    position:relative;
+    top:0;
+}
+.pricing .card:hover{
+    top:-2rem;
+}
+.pricing .card:hover .card-subtitle{
+    background-color: #ec1c23 !important;
+    color:#fff !important;
+}
+.pricing .card:hover .card-link{
+    background-color: #08526d !important;
+}
+@media  (max-width:991px) {
+    .pricing .card:hover{
+        top:-1rem;
+    }
+}
+/* End pricing */
+/* Start footer */
+footer .footer-read-more::before{
+    font-family:'FontAwesome';
+    content:'\f138';
+    margin-right:.5rem;
+}
+.footer-links::before{
+    font-family:'FontAwesome';
+    content:'\f105';
+    margin-right:.5rem;
+}
+/* End footer */
